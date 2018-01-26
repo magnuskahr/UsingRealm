@@ -13,6 +13,8 @@
 		4C089058201BEF3A003605BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C089057201BEF3A003605BF /* Assets.xcassets */; };
 		4C08905B201BEF3A003605BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C089059201BEF3A003605BF /* LaunchScreen.storyboard */; };
 		4C089066201BEF3A003605BF /* UsingRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089065201BEF3A003605BF /* UsingRealmTests.swift */; };
+		4C089071201BF084003605BF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089070201BF084003605BF /* RealmManager.swift */; };
+		4C089072201BF084003605BF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089070201BF084003605BF /* RealmManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,7 @@
 		4C089061201BEF3A003605BF /* UsingRealmTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UsingRealmTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C089065201BEF3A003605BF /* UsingRealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingRealmTests.swift; sourceTree = "<group>"; };
 		4C089067201BEF3A003605BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C089070201BF084003605BF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,7 @@
 				4C089057201BEF3A003605BF /* Assets.xcassets */,
 				4C089059201BEF3A003605BF /* LaunchScreen.storyboard */,
 				4C08905C201BEF3A003605BF /* Info.plist */,
+				4C089070201BF084003605BF /* RealmManager.swift */,
 			);
 			path = UsingRealm;
 			sourceTree = "<group>";
@@ -201,6 +205,7 @@
 			files = (
 				4C089053201BEF3A003605BF /* ViewController.swift in Sources */,
 				4C089051201BEF3A003605BF /* AppDelegate.swift in Sources */,
+				4C089071201BF084003605BF /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +214,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C089066201BEF3A003605BF /* UsingRealmTests.swift in Sources */,
+				4C089072201BF084003605BF /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
