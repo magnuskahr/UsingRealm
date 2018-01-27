@@ -15,6 +15,12 @@
 		4C089066201BEF3A003605BF /* UsingRealmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089065201BEF3A003605BF /* UsingRealmTests.swift */; };
 		4C089071201BF084003605BF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089070201BF084003605BF /* RealmManager.swift */; };
 		4C089072201BF084003605BF /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089070201BF084003605BF /* RealmManager.swift */; };
+		4C089075201BF0B1003605BF /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C089073201BF0B0003605BF /* Realm.framework */; };
+		4C089076201BF0B1003605BF /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C089073201BF0B0003605BF /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C089077201BF0B1003605BF /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C089074201BF0B0003605BF /* RealmSwift.framework */; };
+		4C089078201BF0B1003605BF /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4C089074201BF0B0003605BF /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4C08907B201D31B8003605BF /* SomeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08907A201D31B8003605BF /* SomeEntry.swift */; };
+		4C08907C201D31B8003605BF /* SomeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C08907A201D31B8003605BF /* SomeEntry.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,6 +32,21 @@
 			remoteInfo = UsingRealm;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C089079201BF0B1003605BF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4C089078201BF0B1003605BF /* RealmSwift.framework in Embed Frameworks */,
+				4C089076201BF0B1003605BF /* Realm.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C08904D201BEF3A003605BF /* UsingRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +60,9 @@
 		4C089065201BEF3A003605BF /* UsingRealmTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsingRealmTests.swift; sourceTree = "<group>"; };
 		4C089067201BEF3A003605BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C089070201BF084003605BF /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		4C089073201BF0B0003605BF /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		4C089074201BF0B0003605BF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		4C08907A201D31B8003605BF /* SomeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeEntry.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +70,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C089077201BF0B1003605BF /* RealmSwift.framework in Frameworks */,
+				4C089075201BF0B1003605BF /* Realm.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +88,8 @@
 		4C089044201BEF3A003605BF = {
 			isa = PBXGroup;
 			children = (
+				4C089073201BF0B0003605BF /* Realm.framework */,
+				4C089074201BF0B0003605BF /* RealmSwift.framework */,
 				4C08904F201BEF3A003605BF /* UsingRealm */,
 				4C089064201BEF3A003605BF /* UsingRealmTests */,
 				4C08904E201BEF3A003605BF /* Products */,
@@ -87,6 +115,7 @@
 				4C089059201BEF3A003605BF /* LaunchScreen.storyboard */,
 				4C08905C201BEF3A003605BF /* Info.plist */,
 				4C089070201BF084003605BF /* RealmManager.swift */,
+				4C08907A201D31B8003605BF /* SomeEntry.swift */,
 			);
 			path = UsingRealm;
 			sourceTree = "<group>";
@@ -110,6 +139,7 @@
 				4C089049201BEF3A003605BF /* Sources */,
 				4C08904A201BEF3A003605BF /* Frameworks */,
 				4C08904B201BEF3A003605BF /* Resources */,
+				4C089079201BF0B1003605BF /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,6 +233,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C08907B201D31B8003605BF /* SomeEntry.swift in Sources */,
 				4C089053201BEF3A003605BF /* ViewController.swift in Sources */,
 				4C089051201BEF3A003605BF /* AppDelegate.swift in Sources */,
 				4C089071201BF084003605BF /* RealmManager.swift in Sources */,
@@ -215,6 +246,7 @@
 			files = (
 				4C089066201BEF3A003605BF /* UsingRealmTests.swift in Sources */,
 				4C089072201BF084003605BF /* RealmManager.swift in Sources */,
+				4C08907C201D31B8003605BF /* SomeEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,6 +393,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29RJCX35A7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UsingRealm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnuskahr.UsingRealm;
@@ -376,6 +412,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 29RJCX35A7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = UsingRealm/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnuskahr.UsingRealm;

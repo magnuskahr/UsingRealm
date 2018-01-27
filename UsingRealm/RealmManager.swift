@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import RealmSwift
+
+protocol RealmManager {
+    var fix: String { get }
+}
+
+class RealmManagerImpl : RealmManager {
+    let fix: String = ""
+    
+    private var database: Realm
+    static let sharedINstance = RealmManagerImpl()
+    
+    private init() {
+        database = try! Realm()
+    }
+    
+    func getData() -> SomeEntry {
+        
+    }
+}
