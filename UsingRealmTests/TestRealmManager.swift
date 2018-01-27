@@ -1,5 +1,5 @@
 //
-//  UsingRealmTests.swift
+//  TestRealmManager.swift
 //  UsingRealmTests
 //
 //  Created by Magnus Jensen on 27/01/2018.
@@ -7,9 +7,9 @@
 //
 
 import XCTest
-@testable import UsingRealm
 
-class UsingRealmTests: XCTestCase {
+@testable import UsingRealm
+class TestRealmManager: XCTestCase {
     
     override func setUp() {
         super.setUp()
@@ -22,8 +22,8 @@ class UsingRealmTests: XCTestCase {
     }
     
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let manager : RealmManager = RealmManagerImpl.sharedInstance
+        XCTAssertEqual(manager.entries.count, 0)
     }
     
     func testPerformanceExample() {

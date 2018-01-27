@@ -9,21 +9,24 @@
 import Foundation
 import RealmSwift
 
+
 protocol RealmManager {
-    var fix: String { get }
+    var entries: [SomeEntry] { get }
 }
 
 class RealmManagerImpl : RealmManager {
-    let fix: String = ""
     
     private var database: Realm
-    static let sharedINstance = RealmManagerImpl()
+    private(set) var entries = [SomeEntry]()
+    
+    static let sharedInstance = RealmManagerImpl()
     
     private init() {
         database = try! Realm()
+        
+        for entry in database.objects(SomeEntry.self) {
+            entries.append(entry)
+        }
     }
     
-    func getData() -> SomeEntry {
-        
-    }
 }

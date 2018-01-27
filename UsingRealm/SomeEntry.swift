@@ -9,6 +9,6 @@
 import Foundation
 import RealmSwift
 
-class SomeEntry: Object {
+public class SomeEntry: Object {
     @objc dynamic var title = "aTitle"
 }
