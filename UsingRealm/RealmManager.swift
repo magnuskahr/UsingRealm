@@ -24,9 +24,9 @@ class RealmManagerImpl : RealmManager {
     private init() {
         database = try! Realm()
         
-        for entry in database.objects(SomeEntry.self) {
-            entries.append(entry)
-        }
+//        database.objects(SomeEntry.self).forEach({entries.append($0)})
+        entries.append(contentsOf: database.objects(SomeEntry.self))
+        
     }
     
 }
