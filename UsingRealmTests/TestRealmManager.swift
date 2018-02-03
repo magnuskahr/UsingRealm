@@ -11,26 +11,27 @@ import XCTest
 @testable import UsingRealm
 class TestRealmManager: XCTestCase {
     
+    var manager: RealmManagerImpl!
+    
     override func setUp() {
         super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+        manager = RealmManagerImpl.sharedInstance
+        manager.deleteAll()
     }
     
     override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
+        manager = nil
         super.tearDown()
     }
     
-    func testExample() {
-        let manager : RealmManager = RealmManagerImpl.sharedInstance
+    func testContainZeroEntries() {
         XCTAssertEqual(manager.entries.count, 0)
     }
     
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    func testAddOneEntry() {
+        let entry = SomeEntry()
+        entry.title = "test"
+        manager.add(entry: entry)
+        XCTAssertEqual(manager.entries.count, 1)
     }
-    
 }

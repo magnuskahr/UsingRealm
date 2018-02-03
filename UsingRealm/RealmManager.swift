@@ -28,11 +28,17 @@ class RealmManagerImpl : RealmManager {
     }
     
     func add(entry: SomeEntry) {
-        try? database.write {
+        try! database.write {
             database.add(entry, update: true)
             entries.append(entry)
             print("Did add: \(entry.title)")
         }
     }
     
+    func deleteAll() {
+        try! database.write {
+            database.deleteAll()
+            entries = []
+        }
+    }
 }
