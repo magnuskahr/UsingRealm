@@ -12,6 +12,7 @@ import RealmSwift
 
 protocol RealmManager {
     var entries: [SomeEntry] { get }
+    func add(entry: SomeEntry)
 }
 
 class RealmManagerImpl : RealmManager {
@@ -23,10 +24,15 @@ class RealmManagerImpl : RealmManager {
     
     private init() {
         database = try! Realm()
-        
-//        database.objects(SomeEntry.self).forEach({entries.append($0)})
         entries.append(contentsOf: database.objects(SomeEntry.self))
-        
+    }
+    
+    func add(entry: SomeEntry) {
+        try? database.write {
+            database.add(entry, update: true)
+            entries.append(entry)
+            print("Did add: \(entry.title)")
+        }
     }
     
 }

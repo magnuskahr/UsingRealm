@@ -10,5 +10,14 @@ import Foundation
 import RealmSwift
 
 public class SomeEntry: Object {
+    
+    @objc dynamic var ID = UUID().uuidString
     @objc dynamic var title = "aTitle"
+    
+    /**
+     Name of variable to hold primary key
+    */
+    override public static func primaryKey() -> String? {
+        return "ID"
+    }
 }

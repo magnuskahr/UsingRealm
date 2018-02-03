@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4C089051201BEF3A003605BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089050201BEF3A003605BF /* AppDelegate.swift */; };
-		4C089053201BEF3A003605BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C089052201BEF3A003605BF /* ViewController.swift */; };
 		4C089056201BEF3A003605BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C089054201BEF3A003605BF /* Main.storyboard */; };
 		4C089058201BEF3A003605BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C089057201BEF3A003605BF /* Assets.xcassets */; };
 		4C08905B201BEF3A003605BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C089059201BEF3A003605BF /* LaunchScreen.storyboard */; };
@@ -21,6 +20,7 @@
 		4C7CF6A9201D3A43002347A7 /* TestRealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C7CF6A8201D3A43002347A7 /* TestRealmManager.swift */; };
 		4C7CF6AA201D3B00002347A7 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C089073201BF0B0003605BF /* Realm.framework */; };
 		4C7CF6AB201D3B03002347A7 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C089074201BF0B0003605BF /* RealmSwift.framework */; };
+		4CEE85322025BB850033D1B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEE85312025BB850033D1B3 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,7 +51,6 @@
 /* Begin PBXFileReference section */
 		4C08904D201BEF3A003605BF /* UsingRealm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingRealm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C089050201BEF3A003605BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4C089052201BEF3A003605BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4C089055201BEF3A003605BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4C089057201BEF3A003605BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C08905A201BEF3A003605BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		4C089074201BF0B0003605BF /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		4C08907A201D31B8003605BF /* SomeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SomeEntry.swift; sourceTree = "<group>"; };
 		4C7CF6A8201D3A43002347A7 /* TestRealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestRealmManager.swift; sourceTree = "<group>"; };
+		4CEE85312025BB850033D1B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,13 +111,13 @@
 			isa = PBXGroup;
 			children = (
 				4C089050201BEF3A003605BF /* AppDelegate.swift */,
-				4C089052201BEF3A003605BF /* ViewController.swift */,
 				4C089054201BEF3A003605BF /* Main.storyboard */,
 				4C089057201BEF3A003605BF /* Assets.xcassets */,
 				4C089059201BEF3A003605BF /* LaunchScreen.storyboard */,
 				4C08905C201BEF3A003605BF /* Info.plist */,
 				4C089070201BF084003605BF /* RealmManager.swift */,
 				4C08907A201D31B8003605BF /* SomeEntry.swift */,
+				4CEE85312025BB850033D1B3 /* ViewController.swift */,
 			);
 			path = UsingRealm;
 			sourceTree = "<group>";
@@ -236,8 +236,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C08907B201D31B8003605BF /* SomeEntry.swift in Sources */,
-				4C089053201BEF3A003605BF /* ViewController.swift in Sources */,
 				4C089051201BEF3A003605BF /* AppDelegate.swift in Sources */,
+				4CEE85322025BB850033D1B3 /* ViewController.swift in Sources */,
 				4C089071201BF084003605BF /* RealmManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
